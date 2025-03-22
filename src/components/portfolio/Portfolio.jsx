@@ -24,7 +24,7 @@ const Portfolio = () => {
           <div className='portfolio__item-image'>
             <img src={IMG4} alt="" />
           </div>
-          <h3>App Finanças - React Native/Expo</h3>
+          <h3>Marketplace seleção de Azeites</h3>
           <div className='portfolio__item-cta'> 
             <a href='https://github.com/felipalb/financialapp' className='btn' target='blank'>GitHub</a>
           </div>
@@ -33,7 +33,7 @@ const Portfolio = () => {
           <div className='portfolio__item-image'>
             <img src={IMG5} alt="" />
           </div>
-          <h3>Projeto Integrador 1 - Sistema de Qualidade do ar</h3>
+          <h3>Sistema de Qualidade do ar</h3>
           <div className='portfolio__item-cta'> 
             <a href='https://github.com/Time2PI/PI-SistemaQualidadeDoAr/tree/main' className='btn' target='blank'>GitHub</a>
           </div>

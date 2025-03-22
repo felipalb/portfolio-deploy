@@ -24,16 +24,17 @@ const About = () => {
               <FaAward className='about__icon'/>
               <h3>Certificados</h3>
               <h5>Cursando Eng. de Software - <span>Fiap - São Paulo</span></h5>
-              <h5>Curso Desenvolvimento Web <span>Rocketseat e Potencia Tech</span></h5>
+              <h5>Curso Desenvolvimento Web -<span>Rocketseat</span></h5>
+              <h5>Curso de Análise de dados com ChatGPT -<span>Alura</span></h5>
+              <h5>Curso de pensamento computacional -<span>TIC em trilhas</span></h5>
 
             </article>
           </div>
             <p>
-            Apaixonado por tecnologia e suas vertentes. 
-            Sempre disposto a encarar novos desafios e usar a criatividade para solucionar problemas.
+            Com uma grande curiosidade pelo meio de tecnologia, iniciei meus estudos em 2020, desde então peguei prática e conhecimento sobre diversas áreas de atuação, obtendo experiências na área de tratamento de dados, desenvolvimento front-end e lógica de programação para desenvolvimento back-end.
             </p>
 
-            <a href='#contact' className='btn btn-primary'>Vamos conversar!</a>
+            <a href='#contact' className='btn btn-primary'>Entre em contato!</a>
         </div>
       </div>
     </section>
