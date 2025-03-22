@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/felipalb/portfolio-deploy/static/css/main.00e5c6d8.css",
+    "main.js": "/felipalb/portfolio-deploy/static/js/main.9445cc98.js",
+    "static/media/perfil.png": "/felipalb/portfolio-deploy/static/media/perfil.032d821ffdab0e13e482.png",
+    "static/media/img-1.jpg": "/felipalb/portfolio-deploy/static/media/img-1.e057f503301bd1d23a86.jpg",
+    "static/media/portfolio3.jpeg": "/felipalb/portfolio-deploy/static/media/portfolio3.8d68be12d79734f830cf.jpeg",
+    "static/media/portfolio4.jpeg": "/felipalb/portfolio-deploy/static/media/portfolio4.1064ceb5f820c68ea650.jpeg",
+    "static/media/cv.pdf": "/felipalb/portfolio-deploy/static/media/cv.f84a99d1162a9eff3d82.pdf",
+    "index.html": "/felipalb/portfolio-deploy/index.html",
+    "main.00e5c6d8.css.map": "/felipalb/portfolio-deploy/static/css/main.00e5c6d8.css.map",
+    "main.9445cc98.js.map": "/felipalb/portfolio-deploy/static/js/main.9445cc98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00e5c6d8.css",
+    "static/js/main.9445cc98.js"
+  ]
+}
