@@ -16,18 +16,18 @@ const About = () => {
           <div className='about__cards'>
             <article className='about__card'>
               <FaAward className='about__icon'/>
-              <h3>Experiência</h3><br/>
-              <h4>iOS Developer</h4><br/>
-              <h4>Apple Developer Academy</h4><br/>
+              <h3>Experiência</h3>
+              <h4>iOS Developer</h4>
+              <h4>Apple Developer Academy</h4>
               <h4>1Y como analista de dados</h4>
             </article>
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h3>Certificados</h3>
-              <h5><span>Cursando</span><br/>Eng. de Software<br/><span>Fiap - São Paulo</span></h5>
-              <h5>Desenvolvimento Web<span>by Rocketseat</span></h5>
-              <h5>Análise de dados com IA<span>by Alura</span></h5>
-              <h5>pensamento computacional<span>by TIC em trilhas</span></h5>
+              <h5><span>Cursando</span> Eng. de Software<br/><span>Fiap - São Paulo</span></h5>
+              <h5>Desenvolvimento Web<br/><span>by Rocketseat</span></h5>
+              <h5>Análise de dados com IA<br/><span>by Alura</span></h5>
+              <h5>pensamento computacional<br/><span>by TIC em trilhas</span></h5>
 
             </article>
           </div>

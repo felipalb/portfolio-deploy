@@ -15,7 +15,7 @@ const Portfolio = () => {
           <div className='portfolio__item-image'>
             <img src={IMG3} alt="" />
           </div>
-          <h3>Challenge Softtek finalista NEXT 2024 <br/>Sistema de gestão de capacidade</h3>
+          <h3>Softtek finalist NEXT 2024 <br/>Sistema de gestão de capacidade</h3>
           <div className='portfolio__item-cta'> 
             <a href='https://github.com/GuiDecker/Softtek' className='btn' target='blank'>GitHub</a>
           </div>
