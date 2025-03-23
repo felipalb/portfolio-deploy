@@ -14,12 +14,14 @@ const About = () => {
         </div>
         <div className='about__content'>
           <div className='about__cards'>
-            <article className='about__card'>
-              <FaAward className='about__icon'/>
+          <article className='about__card'>
+            <FaAward className='about__icon'/>
               <h3>Experiência</h3>
-              <h5>iOS Developer</h5>
-              <h5>Apple Developer Academy</h5>
-              <h5>1Y como analista de dados</h5>
+                <div className='about__content'>
+                  <h5>iOS Developer</h5>
+                  <h5>Apple Developer Academy</h5>
+                  <h5>1Y como analista de dados</h5>
+                </div>
             </article>
             <article className='about__card'>
               <FaAward className='about__icon'/>
