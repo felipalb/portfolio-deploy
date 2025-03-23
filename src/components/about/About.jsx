@@ -18,9 +18,9 @@ const About = () => {
             <FaAward className='about__icon'/>
               <h3>Experiência</h3><br/>
                 <div className='about__content'>
-                  <h5>iOS Developer</h5>
-                  <h5>Apple Developer Academy</h5>
-                  <h5>1Y como analista de dados</h5>
+                  <h4>iOS Developer</h4>
+                  <h4>Apple Developer Academy</h4>
+                  <h4>1Y como analista de dados</h4>
                 </div>
             </article>
             <article className='about__card'>
