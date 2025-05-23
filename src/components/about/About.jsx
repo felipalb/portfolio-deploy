@@ -26,9 +26,10 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h3>Educação</h3>
-              <h5><span>Cursando</span>Eng. de Software<br/><span>Fiap - São Paulo</span></h5>
+              <div className='about__content'>
+              <h5>Eng. de Software<br/><span>Fiap - São Paulo</span></h5>
               <h5>Metodologia CBL de trabalho<br/><span>by Apple</span></h5>
-
+              </div>
             </article>
           </div>
             <p>

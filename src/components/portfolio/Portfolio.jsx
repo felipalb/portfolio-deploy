@@ -40,7 +40,6 @@ const Portfolio = () => {
           </div>
         </article>
       </div>
-      <h2>Mais projetos em breve...</h2>
     </section>
   )
 }
