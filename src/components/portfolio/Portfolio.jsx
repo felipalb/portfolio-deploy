@@ -22,8 +22,7 @@ const Portfolio = () => {
         </article>
         <article className='portfolio__item'>
           <div className='portfolio__item-image'>
-            <img src={IMG4} alt="" />
-            <a href="https://pieralisiselecaodeazeites.com/"/>
+            <img src={IMG4} href="https://pieralisiselecaodeazeites.com/"/>
           </div>
           <h3>Marketplace seleção de Azeites</h3>
           <div className='portfolio__item-cta'> 
