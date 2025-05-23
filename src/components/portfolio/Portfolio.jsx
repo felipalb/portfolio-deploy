@@ -22,7 +22,7 @@ const Portfolio = () => {
         </article>
         <article className='portfolio__item'>
           <div className='portfolio__item-image'>
-          <a href='https://github.com/felipalb/clubedoazeitepieralisi' rel="noopener noreferrer" target='blank'>
+          <a href='https://pieralisiselecaodeazeites.com/' rel="noopener noreferrer" target='blank'>
             <img src={IMG4} alt= ""/>
           </a>
           </div>
