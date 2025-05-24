@@ -27,8 +27,8 @@ const About = () => {
               <FaAward className='about__icon'/>
               <h3>Educação</h3>
               <div className='about__content'>
-              <h5>Eng. de Software<br/><span>Fiap - São Paulo</span></h5>
-              <h5>Metodologia CBL de trabalho<br/><span>by Apple</span></h5>
+              <h4>Eng. de Software<br/></h4><h5><span>Fiap - São Paulo</span></h5>
+              <h4>Metodologia CBL de trabalho<br/></h4><h5><span>by Apple</span></h5>
               </div>
             </article>
           </div>
