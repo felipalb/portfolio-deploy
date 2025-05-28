@@ -16,7 +16,7 @@ const About = () => {
           <div className='about__cards'>
           <article className='about__card'>
             <FaAward className='about__icon'/>
-              <h3>Experiência</h3><br/>
+              <h3>Experiência</h3>
                 <div className='about__content'>
                 <h4>iOS Developer<br/></h4><h5><span>Apple Developer Academy</span></h5>
                 <h4>1A Analista de dados<br/></h4><h5><span>Pieralisi Circular Thinking</span></h5>
