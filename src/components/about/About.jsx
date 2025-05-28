@@ -19,8 +19,9 @@ const About = () => {
               <h3>Experiência</h3><br/>
                 <div className='about__content'>
                   <h4>iOS Developer</h4>
-                  <h4>Apple Developer Academy</h4>
+                  <h5>Apple Developer Academy</h5>
                   <h4>1A como analista de dados</h4>
+                  <h5>Pieralisi Circular Thinking</h5>
                 </div>
             </article>
             <article className='about__card'>
