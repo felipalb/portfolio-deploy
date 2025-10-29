@@ -18,29 +18,29 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h5>Vamos conversar</h5>
-      <h2>CONTATO</h2>
+      <h5>Call me now to</h5>
+      <h2>Talk!</h2>
 
       <div className="container contact__container">
           <div className="contact__options">
             <article className="contact__option">
               <MdOutlineEmail className='contact__option-icon' />
               <h4>Email</h4>
-              <a href='mailto:felipealbertosantos@outlook.com'>Mande uma mensagem</a>
+              <a href='mailto:felipealbertosantos@outlook.com'>Contact me!</a>
             </article>
 
             <article className="contact__option">
               <BsWhatsapp className='contact__option-icon' />
               <h4>WhatsApp</h4>
-              <a href='https://api.whatsapp.com/send?phone=5519999929394'>Envie uma mensagem</a>
+              <a href='https://api.whatsapp.com/send?phone=5519999929394'>Message me!</a>
             </article>
           </div>
 
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name="name" placeholder='Seu nome' required />
-            <input type="email" name="email" placeholder='Seu e-mail' required />
-            <textarea type="message" name="name" placeholder='Digite sua mensagem...' required></textarea>
-            <button type="submit" className='btn btn-primary'>Enviar mensagem</button>
+            <input type="text" name="name" placeholder='Your name' required />
+            <input type="email" name="email" placeholder='your email' required />
+            <textarea type="message" name="name" placeholder='Type your message...' required></textarea>
+            <button type="submit" className='btn btn-primary'>Get in touch</button>
           </form>
       </div>
     </section>
