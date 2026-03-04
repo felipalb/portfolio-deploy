@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css';
-import ME from '../../assets/img-1.jpg';
+import ME from '../../assets/img-1.jpeg';
 import { FaAward } from 'react-icons/fa';
 const About = () => {
   return (
@@ -19,7 +19,6 @@ const About = () => {
               <h3>Experience</h3>
                 <div className='about__content'>
                 <h4>iOS Developer<br/></h4><h5><span>Apple Developer Academy</span></h5>
-                <h4>Mobile Software QA<br/></h4><h5><span>Meta computer services</span></h5>
                 </div>
             </article>
             <article className='about__card'>
@@ -32,9 +31,7 @@ const About = () => {
             </article>
           </div>
             <p>
-              A Software Engineering graduate from FIAP and a participant in the Apple Developer Academy, where, with a keen interest in meeting societal needs and challenges, I develop several iOS apps, leveraging my knowledge in practice and learning from documentation and online materials to bring practical, profitable technologies and products to life for end users.
-<br/>
-              I currently work as a Mobile Software QA, combining critical thinking and a focus on product quality to transform technology into solutions that matter.
+              I am an undergraduate student in Software Engineering at FIAP and a participant in the Apple Developer Academy, where, with a strong interest in meeting the needs and challenges of society, I develop some applications for Apple platforms, applying my knowledge in practice and learning from documentation and online materials to bring to life practical and profitable technologies and products for end users.
             </p>
 
             <a href='#contact' className='btn btn-primary'>Get in touch!</a>

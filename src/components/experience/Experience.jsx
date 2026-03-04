@@ -92,7 +92,7 @@ const Experience = () => {
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>iOS App Intents</h4>
+                <h4>App Intents</h4>
               </div>
             </article>
             <article className='experience__details'>

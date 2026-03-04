@@ -10,31 +10,47 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
 }
+
 .portfolio__item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
 }
 
-.portfolio__item-image {
-    border-radius: 1.5rem;
-    height: 12rem;
-    overflow: hidden;
+.portfolio__item h3 {
+    margin: 1rem 0 0.8rem;
 }
 
-.portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
+.portfolio__expand-btn {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+}
+
+.portfolio__expand-btn:hover {
+    color: var(--color-white);
+}
+
+.portfolio__description {
+    color: var(--color-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0.8rem 0;
 }
 
 .portfolio__item-cta {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.github-icon {
-    font-size: 2rem;
-    color: black;
+    justify-content: center;
+    margin-top: auto;
+    padding-top: 1.5rem;
 }
 
 /* ----------------- MEDIA QUERIES (MEDIUM DEVICES) ------------------ */
