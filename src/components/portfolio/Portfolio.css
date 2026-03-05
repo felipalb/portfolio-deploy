@@ -4,19 +4,74 @@
     gap: 2.5rem;
 }
 
+/* ---- Flip card wrapper ---- */
+.portfolio__card {
+    perspective: 1200px;
+    cursor: pointer;
+}
+
+.portfolio__card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.portfolio__card.flipped .portfolio__card-inner {
+    transform: rotateY(180deg);
+}
+
+/* ---- Shared face styles ---- */
+.portfolio__face {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.portfolio__front {
+    /* sits in normal flow so card height is driven by content */
+}
+
+.portfolio__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    background: var(--color-bg-variant);
+}
+
+.portfolio__back-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+
+/* ---- Original item styles ---- */
 .portfolio__item {
     background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
-    transition: var(--transition);
+    transition: border-color var(--transition), background var(--transition);
     display: flex;
     flex-direction: column;
 }
 
-.portfolio__item:hover {
+.portfolio__card:hover .portfolio__front {
     border-color: var(--color-primary-variant);
     background: transparent;
+}
+
+.portfolio__card.flipped:hover .portfolio__front {
+    border-color: transparent;
+    background: var(--color-bg-variant);
 }
 
 .portfolio__item h3 {
