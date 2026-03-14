@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useLayoutEffect } from 'react';
 import './Portfolio.css';
 import CarelyProject from '../../assets/CarelyProject.png';
 import PieralisiProject from '../../assets/PieralisiProject.png';
@@ -30,8 +30,19 @@ const data = [
   }
 ];
 
+const maxCharCount = Math.max(...data.map(item => item.description.trim().length));
+const maxCharIndex = data.findIndex(item => item.description.trim().length === maxCharCount);
+
 const Portfolio = () => {
   const [flipped, setFlipped] = useState({});
+  const cardRefs = useRef([]);
+  const [uniformHeight, setUniformHeight] = useState(null);
+
+  useLayoutEffect(() => {
+    const heights = cardRefs.current.map(ref => ref?.offsetHeight || 0);
+    const maxHeight = heights[maxCharIndex] > 0 ? heights[maxCharIndex] : Math.max(...heights);
+    setUniformHeight(maxHeight);
+  }, []);
 
   const toggleFlip = (id) => {
     setFlipped(prev => ({ ...prev, [id]: !prev[id] }));
@@ -43,11 +54,13 @@ const Portfolio = () => {
       <h2>Projects</h2>
 
       <div className='container portfolio__container'>
-        {data.map(({ id, title, description, cta, image }) => (
+        {data.map(({ id, title, description, cta, image }, index) => (
           <div
+            ref={el => cardRefs.current[index] = el}
             className={`portfolio__card${flipped[id] ? ' flipped' : ''}`}
             key={id}
             onClick={() => toggleFlip(id)}
+            style={uniformHeight ? { height: `${uniformHeight}px` } : {}}
           >
             <div className='portfolio__card-inner'>
               {/* Front */}

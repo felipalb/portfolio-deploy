@@ -29,7 +29,7 @@
 }
 
 .portfolio__front {
-    /* sits in normal flow so card height is driven by content */
+    height: 100%;
 }
 
 .portfolio__back {

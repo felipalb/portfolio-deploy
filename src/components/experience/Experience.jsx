@@ -2,113 +2,53 @@ import React from 'react';
 import './Experience.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
 
+const sections = [
+  {
+    title: 'Languages',
+    className: 'experience__frontend',
+    items: ['JavaScript', 'Python', 'C++', 'Swift', 'Dart']
+  },
+  {
+    title: 'Technologies',
+    className: 'experience__backend',
+    items: ['ReactJS', 'Foundation Models', 'SwiftUI', 'CoreML & CreateML', 'FireBase', 'App Intents']
+  }
+];
+
+const maxCharCount = Math.max(...sections.map(s =>
+  s.items.reduce((acc, item) => acc + item.length, 0)
+));
+
+const maxSection = sections.find(s =>
+  s.items.reduce((acc, item) => acc + item.length, 0) === maxCharCount
+);
+
+const maxRows = Math.ceil(maxSection.items.length / 2);
+
 const Experience = () => {
   return (
     <section id="experience">
       <h2>Hard-Skills</h2>
 
       <div className='container experience__container'>
-        <div className='experience__frontend'>
-          <h3>Languages</h3>
-          <div className='experience__content'>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>CSS</h4>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>JavaScript</h4>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>TypeScript</h4>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>Python</h4>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>C++</h4>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>Swift</h4>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>Dart</h4>
-              </div>
-            </article>
+        {sections.map(({ title, className, items }) => (
+          <div key={className} className={className}>
+            <h3>{title}</h3>
+            <div
+              className='experience__content'
+              style={{ gridTemplateRows: `repeat(${maxRows}, auto)` }}
+            >
+              {items.map((item) => (
+                <article key={item} className='experience__details'>
+                  <BsPatchCheckFill className='experience__details-icon' />
+                  <div>
+                    <h4>{item}</h4>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className='experience__backend'>
-          <h3>Technologies</h3>
-          <div className='experience__content'>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>SwiftUI</h4>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>MySQL</h4>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>ReactJS</h4>           
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>FireBase</h4>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>Flutter</h4>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>App Intents</h4>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>Node</h4>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>TestRail</h4>
-              </div>
-            </article>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   )
