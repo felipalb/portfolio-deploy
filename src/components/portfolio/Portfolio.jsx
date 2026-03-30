@@ -1,4 +1,4 @@
-import React, { useState, useRef, useLayoutEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Portfolio.css';
 import CarelyProject from '../../assets/CarelyProject.png';
 import PieralisiProject from '../../assets/PieralisiProject.png';
@@ -25,7 +25,7 @@ const data = [
     id: 3,
     title: "WordLens - iOS app",
     description: `WordLens is my project submitted to the Swift Student Challenge 2026. The project combines crossword puzzles with current technologies such as augmented reality and artificial intelligence. My goal was to have the user look around to find, in the real world, the object corresponding to the word in the puzzle. Thus, the experience becomes interactive, seeking to recapture sensations that many believed had been left behind in the past.`,
-    cta: { label: "TestFlight", href: "https://testflight.apple.com/join/NdJzhGee" },
+    cta: { label: "App Store", href: "https://apps.apple.com/br/app/wordlens/id6759938248" },
     image: WordLensProject
   }
 ];
@@ -38,10 +38,12 @@ const Portfolio = () => {
   const cardRefs = useRef([]);
   const [uniformHeight, setUniformHeight] = useState(null);
 
-  useLayoutEffect(() => {
-    const heights = cardRefs.current.map(ref => ref?.offsetHeight || 0);
-    const maxHeight = heights[maxCharIndex] > 0 ? heights[maxCharIndex] : Math.max(...heights);
-    setUniformHeight(maxHeight);
+  useEffect(() => {
+    document.fonts.ready.then(() => {
+      const heights = cardRefs.current.map(ref => ref?.offsetHeight || 0);
+      const maxHeight = heights[maxCharIndex] > 0 ? heights[maxCharIndex] : Math.max(...heights);
+      setUniformHeight(maxHeight);
+    });
   }, []);
 
   const toggleFlip = (id) => {
